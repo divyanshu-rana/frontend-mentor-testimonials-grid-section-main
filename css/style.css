@@ -15,6 +15,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 body {
   background-color: var(--Light-grayish-blue);
 }
@@ -24,7 +27,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 95vh;
+  max-height: 100vh;
 }
 .home-container {
   width: 85%;
@@ -120,7 +124,7 @@ body {
   opacity: 50%;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .body-container {
     height: unset;
     padding: 5rem 0;
